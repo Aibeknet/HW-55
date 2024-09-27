@@ -5,11 +5,11 @@ interface Ingredient {
     count: number;
 }
 
-interface InformationAboutCurrentIngredientsProps {
+interface CurrentIngredientsProps {
     ingredients: Ingredient[];
 }
 
-const InformationAboutCurrentIngredients: React.FC<InformationAboutCurrentIngredientsProps> = ({ ingredients }) => {
+const CurrentIngredients: React.FC<CurrentIngredientsProps> = ({ ingredients }) => {
     return (
         <div>
             <div >
@@ -24,4 +24,4 @@ const InformationAboutCurrentIngredients: React.FC<InformationAboutCurrentIngred
     );
 };
 
-export default InformationAboutCurrentIngredients;
+export default CurrentIngredients;

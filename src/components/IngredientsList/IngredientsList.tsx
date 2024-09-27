@@ -1,6 +1,6 @@
 import React from 'react';
-import IngredientButton from '../IngredientButton/IngredientButton.tsx';
-import { INGREDIENTS, Ingredient } from '../../types';
+import IngredientButton from '../IngredientButton/IngredientButton';
+import {INGREDIENTS, Ingredient} from "../../types.ts";
 
 interface IngredientListProps {
     ingredients: Ingredient[];
@@ -8,7 +8,7 @@ interface IngredientListProps {
     deleteIngredientButton: (ingredient: Ingredient) => void;
 }
 
-const IngredientList: React.FC<IngredientListProps> = ({ ingredients, addIngredientToBurgerButton, deleteIngredientButton }) => {
+const IngredientsList: React.FC<IngredientListProps> = ({ ingredients, addIngredientToBurgerButton, deleteIngredientButton }) => {
     return (
         <div>
             {INGREDIENTS.map(ingredient => {
@@ -26,4 +26,4 @@ const IngredientList: React.FC<IngredientListProps> = ({ ingredients, addIngredi
     );
 };
 
-export default IngredientList;
+export default IngredientsList;
