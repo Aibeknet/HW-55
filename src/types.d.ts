@@ -2,6 +2,7 @@ import meatImage from './assets/meat.png';
 import cheeseImage from './assets/cheese.png';
 import saladImage from './assets/salad.png';
 import baconImage from './assets/bacon.png';
+
 export interface Ingredient {
     name: string;
     price: number;
